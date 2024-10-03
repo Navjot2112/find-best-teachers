@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequential Cards</title>
+  <style>
+    .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+  }
+  
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    width: 100%;
+  }
+  
+  .card {
+    flex: 1;
+    max-width: calc(33.33% - 20px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease; /* Add smooth transition */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Add hover effect */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+  }
+  
+  .card-content {
+    padding: 20px; 
+  }
+  
+  h3 {
+    margin-bottom: 10px; /* Add some space below the heading */
+  }
+  
+  p {
+    color: #666; /* Change text color */
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Background styles for cards */
+  .card:nth-child(odd) {
+    background-color: #f8f9fa; /* Light gray background for odd cards */
+  }
+  
+  .card:nth-child(even) {
+    background-color: #e9ecef; /* Light blue background for even cards */
+  }
+  /* Search Form Styles */
+  .search-form {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically */
+    justify-content: flex-end; /* Align items to the right */
+    margin-top: 0px;
+    margin-bottom: 10px ;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-form button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  </style>
+  
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+    <div class="nav" style="background-color: black; text-align: center;">
+        <h1 style="color: aliceblue;">
+            Discover More online sources
+
+        </h1>
+        
+    </div>
+
+<div class="card-container">
+  <!-- First Row -->
+  <div class="card-row">
+
+    <div class="card">
+        
+      <img src="https://th.bing.com/th/id/OIP.H3znJ620ZgwhJy0XbvIv8AHaHa?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Codecademy</h3>
+        <p> Offers interactive coding lessons in various programming languages like Python, JavaScript, HTML/CSS, and more.</p>
+        <a href="https://www.codecademy.com/pages/paid-plans" class="btn btn-primary">check more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.xvxns1tHQeoVG-WnT6ZVtQHaEK?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Coursera </h3>
+        <p>Provides courses from universities and institutions worldwide, covering programming languages, computer science fundamentals, and specialized topics like machine learning and data science.</p>
+        <a href="https://www.coursera.org/courseraplus?utm_source=bg&utm_medium=sem&utm_campaign=B2C_INDIA_Branded_FTCOF_Coursera_Plus_Subscription_ArtE_Bing&utm_content=B2C&campaignid=415374026&adgroupid=1253444572411850&device=c&keyword=coursera&matchtype=e&network=o&devicemodel=&adpostion=&creativeid=&hide_mobile_promo&msclkid=57146d7b9e3112eccd6c0b6781855f38&utm_term=coursera" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.tVHImC715kuoK3qLMsUOfAHaHa?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Udemy</h3>
+        <p> Offers a vast selection of programming courses taught by industry professionals, covering languages like Python, Java, C++, web development, and more.</p>
+        <a href="https://www.udemy.com/" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="card-row">
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.ZvkV-D2v2yj84Iu7mc4W4AHaEK?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>FreeCodeCamp:</h3>
+        <p>A free platform with interactive coding challenges and projects covering full-stack web development, including HTML/CSS, JavaScript, and various frameworks.</p>
+        <a href="https://www.freecodecamp.org/" class="btn btn-primary">check more</a>
+   </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R.f42db430ae2ddd452b0649a4fd501b02?rik=3NCsoqRIXfuBYg&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f10%2fKhan_Academy_logo_logotype_emblem.png&ehk=cAzelbYDtU4PtTRN1QyCl2fLesuDOmucNHzaJssHPpY%3d&risl=&pid=ImgRaw&r=0/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Khan Academy</h3>
+        <p>Provides beginner-friendly programming courses and tutorials in JavaScript, HTML/CSS, and computer science fundamentals.</p>
+        <a href="https://www.khanacademy.org/" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.chhKo9KEel7n7hi0O_cEPAAAAA?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>The Odin Project:</h3>
+        <p>A free, open-source curriculum for learning web development, covering HTML, CSS, JavaScript, and related technologies.</p>
+        <a href="https://www.theodinproject.com/" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+  </div>
+  <div class="card-row">
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.aG2MmCWEMWJjVj12d0Ad1gHaBm?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Pluralsight</h3>
+        <p> Offers courses on programming languages, software development, IT operations, and more, with a focus on technology professionals.</p>
+        <a href="https://www.pluralsight.com/" class="btn btn-primary">check more</a>
+   </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.PAvDHEkTUXgvvs2VChuUbAHaEJ?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>LinkedIn Learning:</h3>
+        <p>Formerly known as Lynda.com, LinkedIn Learning provides courses on coding languages, software development methodologies, and related skills.</p>
+        <a href="https://learning.linkedin.com/cx/get-started?src=pa-bi&trk=sem-bi_campid.395443068_asid.1290826976402076_crid.80676773752406_kw.linkedin%20learning_d.c_tid.kwd-80676872846056:loc-90_n.o_mt.e_geo.155395&mcid=6842178359988908202&cid=&gclid=8ce80b3631d21a0e30106d2a10b52cda&gclsrc=3p.ds&msclkid=8ce80b3631d21a0e30106d2a10b52cda" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.iuaWTV7QCil3pOP-TWx8CgAAAA?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>MIT OpenCourseWare</h3>
+        <p>Provides free access to course materials from MIT, including computer science and programming courses.</p>
+        <a href="https://ocw.mit.edu/" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+    <!-- First Row -->
+  <div class="card-row">
+
+    <div class="card">
+        
+      <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1665552178293/tjscqFgF4.png?auto=compress,format&format=webp/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Hackerrank:</h3>
+        <p> Offers coding challenges and competitions to practice coding skills in various programming languages.</p>
+        <a href="https://www.hackerrank.com/" class="btn btn-primary">check more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.jBl7AkOr8GcWJRV-0bjIuAHaEy?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>LeetCode</h3>
+        <p>Focuses on coding interview preparation with coding challenges and mock interviews in multiple programming languages.</p>
+        <a href="https://leetcode.com/problems/longest-common-prefix/" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.91XhFFTMQCj7F0fmmr4hSQHaEK?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Treehouse</h3>
+        <p> Provides courses on web development, programming languages, and design, with a focus on building practical skills</p>
+        <a href="https://teamtreehouse.com/" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="card-row">
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.nvfACQ7MlMkOFCoaEbjOpwHaDc?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Brandfolder  </h3>
+        <p> Brandfolder is a platform that hosts brand assets, including logo images, style guides, and other branding materials. 
+
+        </p>
+        <a href="https://www.brandfolder.com/" class="btn btn-primary">check more</a>
+   </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.hv66InWaZK91pfUGIGhC2wHaHa?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Logos Database</h3>
+        <p>Logos Database is a website that hosts a large collection of logo images for various companies</p>
+        <a href="https://www.logosdatabase.com/" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.JeDsjX-S1f4hNjBIFXLz2AHaFx?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Worldvectorlogo:</h3>
+        <p>Worldvectorlogo is a website that provides vector logo images for thousands of brands and organizations..</p>
+        <a href="https://worldvectorlogo.com/">check more</a>
+    </div>
+    </div>
+  </div>
+  <div class="card-row">
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.nEK20qcH_yvt85DMZiQKcwHaEv?rs=1&pid=ImgDetMain/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Logotyp.us </h3>
+        <p> Logotyp.us is a curated gallery of logo designs from around the world. You can browse through their collection of logos and download high-quality images for use on your website.</p>
+        <a href="https://logotyp.us/" class="btn btn-primary">check more</a>
+   </div>
+    </div>
+    <div class="card">
+      <img src="https://cdn3.vectorstock.com/i/1000x1000/43/32/stylish-flat-creative-compass-logo-design-concept-vector-26674332.jpg/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>Coursera for Campus</h3>
+        <p>Coursera offers Coursera for Campus, which provides access to online courses, guided projects, and certificates from universities and institutions worldwide</p>
+        <a href="https://www.coursera.org/for-university-and-college-students" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+    <div class="card">
+      <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/2b659d14-5203-48ea-90b2-7434712650c2.jpeg?auto=format&ixlib=react-9.0.3&w=1946/400x200" alt="Card Image">
+      <div class="card-content">
+        <h3>edX</h3>
+        <p>edX is another popular online learning platform that offers courses from universities, colleges, and organizations worldwide..</p>
+        <a href="https://www.edx.org/" class="btn btn-primary">check more</a>
+    </div>
+    </div>
+    
+
+  </div>
+</div>
+
+</body>
+</html>
